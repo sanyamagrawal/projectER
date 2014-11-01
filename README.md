@@ -1,4 +1,4 @@
-Educational Cop is Build on Top of Angular.
+Project ER is Build on Top of Angular.
 
 It Uses
 
@@ -8,9 +8,9 @@ Angular - Framework for Console Application.
 
 To Setup This Project Follow the following steps. IN any time if you get an error type running the command with sudo
 
-1. Clone the Repo. COMMAND : git clone git@github.com:sanyamagrawal/educationalcop.git
+1. Clone the Repo. COMMAND : git clone git@github.com:sanyamagrawal/projectER.git
 
-2. Enter the Directory COMMAND: cd educationalcop
+2. Enter the Directory COMMAND: cd projectER
 
 3. Install Bower IN Global Name Space . Command : npm install -g bower
 
