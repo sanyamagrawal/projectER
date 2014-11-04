@@ -1,0 +1,24 @@
+@mixin helvetica-family {
+    font-family: "HelveticaNeue-Roman", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+@mixin helvetica {
+    @include helvetica-family;
+    //font-weight: 400;
+}
+
+@mixin helvetica-bold {
+    font-family: "HelveticaNeue-Bold", "HelveticaNeueBold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    //font-weight: 600;
+}
+
+@mixin helvetica-light {
+    font-family: "HelveticaNeue-Light", "HelveticaNeue", "HelveticaNeueLight", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    //font-weight: 300;
+}
+
+@mixin helvetica-italic {
+    font-family: "HelveticaNeue-Italic", "HelveticaNeueItalic", "Helvetica Neue Italic", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    //font-weight: 400;
+    font-style: italic;
+}
