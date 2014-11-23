@@ -1,0 +1,36 @@
+<div>
+    <form ng-submit="submitLogin()">
+        <h3 class="subHeader">Enter your credentials:</h3>
+
+        <input class="form-control" type="text" ng-model="login.username" placeholder="Username"/>
+        <input class="form-control" type="text" ng-model="login.password" placeholder="Password"/>
+        <div>
+            <div class="floatLeft">
+                <input type="checkbox" />
+                <span>Remember Me</span>
+            </div class="floatRight">
+            <div>
+                <input class="btn btn-primary" type="submit" value="Sign In"/>
+            </div>
+        </div>
+    </form>
+
+    <a href="#">Forgot Password?</a>
+
+    <div>
+        Don't have an account? Click here to <a href="#">Sign Up!</a>
+    </div>
+
+    <h1>Login Data</h1>
+
+    <table>
+        <tr ng-repeat="(id, logins) in loginDetails">
+            <td>{{logins.username}}</td>
+            <td>{{logins.password}}</td>
+            <td ng-click="deletePost(id)">delete</td>
+        </tr>
+    </table>
+
+</div>
+
+
