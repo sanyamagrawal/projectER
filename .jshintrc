@@ -1,25 +1,26 @@
 {
-    "bitwise": true,
     "browser": true,
     "curly": true,
     "devel": true,
     "eqeqeq": true,
     "es3": true,
-    "esnext": true,
     "forin": true,
     "indent": 4,
     "latedef": true,
     "loopfunc": true,
     "newcap": true,
-    "node": true,
     "onevar": true,
     "quotmark": "double",
-    "smarttabs": true,
     "trailing": true,
     "undef": true,
     "unused": "strict",
     "worker": true,
     "globalstrict": false,
+    "globals": {
+      "angular": false,
+      "app": false
+    },
+
     "predef": [
         "alert",
         "Blob",
@@ -41,9 +42,6 @@
         "Worker",
         "XMLHttpRequest",
         "XMLSerializer",
-    ],
-    "globals": {
-      "angular": false,
-      "app": false
-    }
+        "$"
+    ]
 }
