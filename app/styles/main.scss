@@ -44,6 +44,7 @@ body {
         display: table;
         table-layout: fixed;
         @include box-sizing(border-box);
+        margin: 0;
     }
     .tableCell {
         display: table-cell;
