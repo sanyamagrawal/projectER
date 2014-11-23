@@ -55,6 +55,27 @@
             background: none;
             background-color: transparent;
             @include transition(color 0.1s linear, background-color 0.2s linear);
+            color: black;
+        }
+    }
+    .blog {
+        background-color: rgba(215, 212, 212, 0.88) !important;
+        .blog-collection {
+            .blog-node {
+                padding: 10px;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                transition: 0.2s;
+            }
+            &:hover {
+                .blog-node {
+                    margin-top: -10px;
+                    border: 1px solid rgb(128, 128, 128);
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 5px;
+                    background: rgba(232, 215, 215, 0.1);
+                    transition: 0.3s;
+                }
+            }
         }
     }
     .btn-circle {
