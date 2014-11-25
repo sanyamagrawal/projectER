@@ -21,7 +21,7 @@
                 <li><a href="#">Our Mission</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <li><button class="btn btn-secondary navbar-btn btn-sm">Sign In</button></li>
+                <li><button navigate-link ="/login" class="btn btn-secondary navbar-btn btn-sm">Log In</button></li>
               </ul>
             </div><!--/.nav-collapse -->
 
@@ -37,20 +37,32 @@
                         <i class="fa fa-lg fa-lock"></i>
                     </button>
                 </div>
-                <h1>or <button class="btn btn-secondary btn-sm">Sign up </button> for a personalized Experience</h1>
+                <h1>or <button navigate-link ="/signup" class="btn btn-secondary btn-sm">Sign up </button> for a personalized Experience</h1>
                 <a href="#about" class="btn btn-circle page-scroll">
                     <i class="fa fa-angle-double-down animated"></i>
                 </a>
         </div>
     </section>
 
-    <section id="Multimedia" class="stretch multimedia">
+    <section id="multimedia" class="stretch multimedia">
         <div class="container">
             <h1>multimedia</h1>
+            <div class="clearfix">
+                <div class="floatLeft">
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/OljkSVLIt6c" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="floatRight">
+                     <iframe width="260" height="215" src="//www.youtube.com/embed/OljkSVLIt6c" frameborder="0" allowfullscreen></iframe>
+                   <!--  <iframe width="260" height="215" src="//www.youtube.com/embed/OljkSVLIt6c" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="260" height="215" src="//www.youtube.com/embed/OljkSVLIt6c" frameborder="0" allowfullscreen></iframe> -->
+                </div>
+            </div>
+
+
         </div>
     </section>
 
-    <section id="Blog" class="stretch blog">
+    <section id="blog" class="stretch blog">
         <div class="container">
             <h1>Blog</h1>
             <div class="row centerAligned">
@@ -106,5 +118,45 @@
 
         </div>
     </section>
+
+    <section id="ourmission" class="stretch ourmission">
+    </section>
+
+    <section id="aboutus" class="stretch aboutus">
+        <div class="container">
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+    <section id="contactus" class="stretch contactus">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div>Please send your compliments, hate mails or feedback to us here:</div>
+            <form class="clearfix">
+                <div class="columnLeft">
+                    <div class="row">
+                        <span class="required">*</span>
+                        <input type="text" placeholder="Name" class="form-control"/>
+                    </div>
+                    <div class="row">
+                        <span class="required">*</span>
+                        <input type="text" placeholder="Email" class="form-control"/>
+                    </div>
+                    <div class="row">
+                        <span class="required">*</span>
+                        <input type="text" placeholder="Capta" class="form-control"/>
+                    </div>
+                </div>
+                <div class="columnRight">
+                    <div class="row">
+                        <textarea col="3" placeholder="Feedback"></textarea>
+                        <span>Remaning Characters = 1500</span>
+                    </div>
+                    <input class="btn btn-primary" type="submit"/>
+                </div>
+            </form>
+        </div>
+    </section>
+
 </main>
 

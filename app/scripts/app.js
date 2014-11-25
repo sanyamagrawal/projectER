@@ -19,10 +19,15 @@ app.config(function($routeProvider) {
             templateUrl: "views/LoginView.html",
             controller: "LoginController"
         })
-        .when("/", {
-            templateUrl: "views/NavigationView.html",
-            controller: "NavigationController"
+        .when("/signup", {
+            templateUrl: "views/Signup.html",
+            controller: "SignupController"
         })
+        .when("/", {
+            templateUrl: "views/HomepageView.html",
+            controller: "HomepageController"
+        })
+
         .otherwise({
             redirectTo: "/"
         });

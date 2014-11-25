@@ -1,5 +1,9 @@
 {
     "browser": true,
+    "bitwise": true,
+    "esnext": true,
+    "node": true,
+    "smarttabs": true,
     "curly": true,
     "devel": true,
     "eqeqeq": true,
