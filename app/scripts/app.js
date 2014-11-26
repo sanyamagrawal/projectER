@@ -11,7 +11,7 @@
  * Main module of the application.
  */
 
-var app = angular.module("websiteApp", ["ngRoute", "ngResource", "firebase"]);
+var app = angular.module("websiteApp", ["ngRoute", "ngResource", "angular-loading-bar", "firebase"]);
 
 app.config(function($routeProvider) {
     $routeProvider
@@ -28,9 +28,9 @@ app.config(function($routeProvider) {
             controller: "HomepageController"
         })
 
-        .otherwise({
-            redirectTo: "/"
-        });
+    .otherwise({
+        redirectTo: "/"
+    });
 });
 
 app.constant("FIREBASE_URL", "https://incandescent-inferno-8790.firebaseIO.com");
