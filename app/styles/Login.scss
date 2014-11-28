@@ -1,7 +1,15 @@
-@import "compass/css3";
+@import "variables";
 
 .login-container {
     .panel-body {
         padding-top: 30px;
+        .input-group-margin {
+            margin-bottom: 25px;
+        }
+        .signupbox {
+            border-top: 1px solid #888;
+            padding-top: 15px;
+            font-size: $fontSizeMinus2;
+        }
     }
 }
