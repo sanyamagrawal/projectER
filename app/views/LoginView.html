@@ -1,10 +1,12 @@
-<div class="login-container container">
+<div class="container login-container">
     <div style="margin-top:50px;"></div>
     <div id="loginbox"  class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <div class="panel panel-info" >
             <div class="clearfix panel-heading">
                 <div class="floatLeft panel-title">Sign In</div>
-                <div class="floatRight postion"style="font-size: 80%"><a href="#">Forgot password?</a></div>
+                <div class="floatRight"style="font-size: 80%">
+                    <a href="#">Forgot password?</a>
+                </div>
             </div>
 
             <div class="panel-body" >
@@ -53,7 +55,8 @@
             </div>
         </div>
     </div>
-    <h1>Login Data</h1>
+    <div class="hide">
+      <h1 >Login Data</h1>
 
         <table>
             <tr ng-repeat="(id, logins) in loginDetails">
@@ -62,6 +65,8 @@
                 <td ng-click="deletePost(id)">delete</td>
             </tr>
         </table>
+    </div>
+
 </div>
 
 
