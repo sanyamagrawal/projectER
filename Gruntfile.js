@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     // Configurable paths for the application
     var appConfig = {
         app: require("./bower.json").appPath || "app",
-        dist: "dist"
+        dist: "build"
     };
 
     // Define the configuration for all the tasks
@@ -350,6 +350,11 @@ module.exports = function(grunt) {
                 }, {
                     expand: true,
                     cwd: "bower_components/bootstrap/dist",
+                    src: "fonts/*",
+                    dest: "<%= yeoman.dist %>"
+                }, {
+                    expand: true,
+                    cwd: "bower_components/font-awesome",
                     src: "fonts/*",
                     dest: "<%= yeoman.dist %>"
                 }]

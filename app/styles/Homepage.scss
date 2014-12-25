@@ -33,6 +33,27 @@
 
 
 .dashboard {
+    .socialIcons {
+        #social:hover {
+            @include transform(scale(1.1));
+        }
+        #social {
+            @include transform(scale(0.8));
+            @include transition-duration(0.5s);
+        }
+        .social-fb:hover {
+            color: #3B5998;
+        }
+        .social-tw:hover {
+            color: #4099FF;
+        }
+        .social-gp:hover {
+            color: #d34836;
+        }
+        .social-em:hover {
+            color: #f39c12;
+        }
+    }
     section {
         &:nth-child(even) {
             background-color: black;
@@ -94,14 +115,10 @@
             color: #fff;
             background: rgba(255, 255, 255, 0.1);
             i.animated {
-                -webkit-animation-name: pulse;
-                -moz-animation-name: pulse;
-                -webkit-animation-duration: 1.5s;
-                -moz-animation-duration: 1.5s;
-                -webkit-animation-iteration-count: infinite;
-                -moz-animation-iteration-count: infinite;
-                -webkit-animation-timing-function: linear;
-                -moz-animation-timing-function: linear;
+                @include animation-name(pulse);
+                @include animation-duration(1.5s);
+                @include animation-iteration-count(infinite);
+                @include animation-timing-function(linear);
             }
         }
         i.animated {
