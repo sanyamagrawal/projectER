@@ -1,0 +1,17 @@
+<div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="member relative">
+                        <img src="http://lorempixel.com/200/200/city/1/" alt="Sanyam Agrawal" class="team-item img-responsive img-circle">
+                        <div class="team-overlay img-circle stretch">
+                            <!-- member's social links
+                            <div class="social-links">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-linkedin"></span></a>
+                                <a href="#"><span class="fa fa-pinterest"></span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> -->
