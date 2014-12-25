@@ -4,9 +4,6 @@
         <div class="panel panel-info" >
             <div class="clearfix panel-heading">
                 <div class="floatLeft panel-title">Sign In</div>
-                <div class="floatRight"style="font-size: 80%">
-                    <a href="#">Forgot password?</a>
-                </div>
             </div>
 
             <div class="panel-body" >
@@ -24,24 +21,27 @@
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                         <input id="login-password" ng-model="login.password" type="password" class="form-control" name="password" placeholder="password">
                     </div>
-
-                    <div class="input-group">
-                        <div class="checkbox">
-                            <label>
-                                <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
-                            </label>
-                          </div>
-                    </div>
-                    <div class="breakDiv"></div>
-                    <div class="form-group">
+                    <div class="clearfix">
+                        <div class="floatLeft input-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="floatRight form-group">
                             <!-- Button -->
-
-                        <div class="col-sm-12 controls">
-                          <a id="btn-login" href="#" class="btn btn-success">Login  </a>
-                          <!-- <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a> -->
+                            <div class="col-sm-12 controls">
+                              <a id="btn-login" href="#" class="btn btn-success">Login </a>
+                              <!-- <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a> -->
+                            </div>
                         </div>
                     </div>
-
+                    <div class="input-group-margin input-group">
+                        <div class="col-md-12">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    </div>
 
                     <div class="form-group">
                         <div class="col-md-12 control">
