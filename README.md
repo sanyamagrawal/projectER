@@ -1,6 +1,8 @@
 To start this project. Please follow the following steps:
 Install Node if you dont have http://nodejs.org/ based on windows and max
 
+You also need to Have Ruby and Compass to complile SASS TO CSS 
+Instructions: http://robdvr.com/install-sass-compass-grunt/
 
 1. git clone git@github.com:sanyamagrawal/projectER.git
 2. cd projectER
@@ -10,6 +12,7 @@ Install Node if you dont have http://nodejs.org/ based on windows and max
 6. npm install
 7. grunt serve
 
+[If you get any error, God save you]
 
 Get the Latest Code :
 
