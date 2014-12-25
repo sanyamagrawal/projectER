@@ -34,6 +34,11 @@
 
 .dashboard {
     .socialIcons {
+        background: darkgray;
+        padding: 5px;
+        border-radius: 15px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
         #social:hover {
             @include transform(scale(1.1));
         }
