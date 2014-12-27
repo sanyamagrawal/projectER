@@ -46,16 +46,16 @@
             @include transform(scale(0.8));
             @include transition-duration(0.5s);
         }
-        .social-fb:hover {
+        .social-fb {
             color: #3B5998;
         }
-        .social-tw:hover {
+        .social-tw {
             color: #4099FF;
         }
-        .social-gp:hover {
+        .social-gp {
             color: #d34836;
         }
-        .social-em:hover {
+        .social-em {
             color: #f39c12;
         }
     }
