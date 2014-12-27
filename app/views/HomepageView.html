@@ -1,4 +1,4 @@
-<main class="stretch dashboard">
+<main class="stretch dashboard" scroll-spy>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -14,14 +14,14 @@
                 </a>
             </div>
             <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#multimedia">Multimedia</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Our Mission</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><button data-navigate-link ="/login" class="btn btn-secondary navbar-btn btn-sm">Log In</button></li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li spy="home"><a href="#">Home</a></li>
+                    <li spy="multimedia"><a href="#multimedia">Multimedia</a></li>
+                    <li spy="blog"><a href="#">Blog</a></li>
+                    <li spy="ourmission"><a href="#">Our Mission</a></li>
+                    <li spy="aboutus"><a href="#">About Us</a></li>
+                    <li spy="contactus"><a href="#">Contact Us</a></li>
+                    <li><button data-navigate-link ="/login" class="btn btn-secondary navbar-btn btn-sm">Log In</button></li>
               </ul>
             </div><!--/.nav-collapse -->
 
@@ -184,11 +184,11 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="well well-md">
-                        <form>
+                        <form name="contactusForm">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="*Name (required)" required="required">
+                                        <input type="text" ng-model="contactus.fullName" class="form-control" id="name" placeholder="*Name (required)" required="required">
                                     </div>
 
                                     <div class="form-group">
@@ -197,7 +197,7 @@
                                                 <span class="glyphicon glyphicon-envelope"></span>
                                             </span>
 
-                                            <input type="email" class="form-control" id="email" placeholder="*Email Address (required)" required="required">
+                                            <input ng-model="contactus.emailId" type="email" class="form-control" id="email" placeholder="*Email Address (required)" required="required">
                                         </div>
                                     </div>
 
@@ -208,12 +208,12 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"ng-model="feedbackMessage" ng-trim="false" maxlength="1500"></textarea>
-                                        <p class="centerAligned">{{1500 - feedbackMessage.length}} Remaining Characters</p>
+                                        <textarea name="message" ng-model="contactus.feedback" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message" ng-trim="false" maxlength="1500"></textarea>
+                                        <p class="centerAligned">{{1500 - contactus.feedback.length}} Remaining Characters</p>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                    <button ng-disabled="contactusForm.$invalid" ng-click="contactUsFormSubmit(contactusForm)" type="submit" class="btn btn-primary pull-right">
                                       Send Message</button>
                                 </div>
                             </div>

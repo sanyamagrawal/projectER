@@ -27,6 +27,10 @@ app.config(function($routeProvider) {
             templateUrl: "views/HomepageView.html",
             controller: "HomepageController"
         })
+        .when("/loginSuccess", {
+            templateUrl: "views/MyProfileView.html",
+            controller: "MyProfileController"
+        })
 
     .otherwise({
         redirectTo: "/"

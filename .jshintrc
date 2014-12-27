@@ -22,7 +22,8 @@
     "globalstrict": false,
     "globals": {
       "angular": false,
-      "app": false
+      "app": false,
+      "$scope":false
     },
 
     "predef": [
