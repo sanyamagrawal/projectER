@@ -8,10 +8,10 @@ app.controller("HomepageController", function($scope, $window, HomepageService) 
     });
 
     $scope.contactUsFormSubmit = function(form) {
-        var reCaptchaResponse = $window.grecaptcha.getResponse();
+        //var reCaptchaResponse = $window.grecaptcha.getResponse();
         if (form.$valid) {
-            //saveFeedback(true);
-            HomepageService.checkUserValid(reCaptchaResponse).then(saveFeedback.bind(this), userInvalid.bind(this));
+            saveFeedback(true);
+            //HomepageService.checkUserValid(reCaptchaResponse).then(saveFeedback.bind(this), userInvalid.bind(this));
         }
     };
 
