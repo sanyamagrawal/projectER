@@ -1,228 +1,36 @@
 <main class="stretch dashboard" scroll-spy>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <div class="bold">Project ER</div>
+    <div ng-include src="'./views/NavigationView.html'"></div>
 
-                </a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#homepage">Home</a></li>
-                    <li><a href="#multimedia">Multimedia</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#ourmission">Our Mission</a></li>
-                    <li><a href="#aboutus">About Us</a></li>
-                    <li><a href="#contactus">Contact Us</a></li>
-                    <li><button style="margin:10px 15px" class="btn btn-primary navbar-btn btn-sm" data-template="./views/LoginView.html" data-placement="right" data-animation="am-slide-right" bs-aside="aside" data-container="body"><strong>Log In</strong></button></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-
-        </div>
-    </nav>
-
-    <article class="fixed" style="top:35%">
+    <section class="fixed" style="top:35%">
         <div ng-include src="'./views/SocialMedia.html'"></div>
-    </article>
+    </section>
 
-    <section id="homepage" class="table stretch about centerAligned">
-        <div class=" tableCell container middleAlign">
-                <h1>Begin your search here. </h1>
-                <div class="relative main-search-container">
-                    <input class="form-control main-search-info-textbox" type="text" placeholder="This feature is currently under construction…" disabled>
-                    <button type="submit" class="btn main-search-button">
-                        <i class="fa fa-lg fa-lock"></i>
-                    </button>
-                </div>
-                <h1>Or <button style="margin-top: -10px;" data-navigate-link ="/signup" class="btn btn-primary btn-lg"><span style="font-size: 18px;font-weight: 400;">Sign Up</span></button> for a personalized experience.</h1>
-                <a href="#about" class="btn btn-circle page-scroll">
-                    <i class="fa fa-angle-double-down animated"></i>
-                </a>
-        </div>
+    <section id="homepage" class="stretch about centerAligned">
+        <div ng-include src="'./views/SearchView.html'" class="stretch"></div>
     </section>
 
     <section id="multimedia" class=" multimedia">
-        <div class="container">
-            <h1>Multimedia</h1>
-            <div class="row">
-              <div class="col-md-4">
-                  <embed src="//www.youtube.com/embed/OljkSVLIt6c" frameborder="0" allowfullscreen></embed>
-                  <embed src="//www.youtube.com/embed/OljkSVLIt6c" frameborder="0" allowfullscreen></embed>
-                  <embed src="//www.youtube.com/embed/OljkSVLIt6c" frameborder="0" allowfullscreen></embed>
-              </div >
-              <div class="col-md-8">
-                  <div class="embed-responsive embed-responsive-16by9">
-                      <iframe src="//www.youtube.com/embed/OljkSVLIt6c" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </div>
-            </div>
-        </div>
+    <div ng-include src="'./views/MultiMediaView.html'"></div>
     </section>
 
     <section id="blog" class=" blog">
-        <div class="container">
-            <h1>Blog</h1>
-            <div class="row centerAligned">
-
-                <div class="col-md-4 blog-collection">
-                    <div class="blog-node">
-                        <img src="http://lorempixel.com/200/200/city/1/" alt="Texto Alternativo" class="img-circle img-thumbnail" />
-                        <h2>Admin Portal</h2>
-                        <p class="justifyAligned">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra,tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc.Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio.
-                        </p>
-                        <a href="#" class="btn btn-primary lower">See Feature details</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 blog-collection">
-                <div class="blog-node">
-                    <img src="http://lorempixel.com/200/200/city/2/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                    <h2>Project Portfolio</h2>
-                    <p class="justifyAligned">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra,tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc.Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio.
-                    </p>
-                    <a href="#" class="btn btn-primary lower">See Feature details</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 blog-collection">
-                <div class="blog-node">
-                    <img src="http://lorempixel.com/200/200/city/3/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                    <h2>Personal Website</h2>
-                    <p class="justifyAligned">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra,tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc.Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio.
-                    </p>
-                    <a href="#" class="btn btn-primary lower">See Feature details</a>
-                </div>
-            </div>
-            </div>
-
-        </div>
+        <div ng-include src="'./views/BlogView.html'"></div>
     </section>
 
     <section id="ourmission" class=" ourmission">
-        <div class="container">
-          <h1>Our Mission</h1>
-          <div class="row">
-
-              <div class="col-md-offset-2 col-md-8 col-md-8">
-                  <div class="embed-responsive embed-responsive-16by9">
-                      <iframe src="//www.youtube.com/embed/OljkSVLIt6c" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </div>
-          </div>
-        </div>
+        <div ng-include src="'./views/MissionView.html'"></div>
     </section>
 
     <section id="aboutus" class=" aboutus">
-        <div class="container">
-            <h1>About Us</h1>
-            <div class="col-md-9 col-md-offset-2">
-                <div class="col-md-5">
-                    <div class="form-group">
-                        <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Feducationcop&amp;width=490&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=435" scrolling="yes" frameborder="0" style="border:none; overflow:hidden; width:313px; height:300px; background: white; float:left; " allowTransparency="true"></iframe>
-                    </div>
-                    <div class="form-group">
-                        <a class="twitter-timeline" href="https://twitter.com/sanyamagrawal" data-widget-id="548791592719376385">Tweets by @sanyamagrawal</a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="clearfix form-group">
-                        <div class="col-md-4">
-                            <img src="http://lorempixel.com/200/200/city/1/" alt="Texto Alternativo" class="img-circle img-thumbnail"  />
-                        </div>
-                        <div class="col-md-4">
-                            <img src="http://lorempixel.com/200/200/city/1/" alt="Texto Alternativo" class="img-circle img-thumbnail"  />
-                        </div>
-                        <div class="col-md-4">
-                            <img src="http://lorempixel.com/200/200/city/1/" alt="Texto Alternativo" class="img-circle img-thumbnail" />
-                        </div>
-                    </div >
-                    <div class="form-group justifyAligned">There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...</div>
-                </div>
-            </div>
-        </div>
+        <div ng-include src="'./views/AboutUsView.html'"></div>
     </section>
 
-    <section id="contactus" class=" contactus">
-        <div class="container">
-            <h1>Contact Us</h1>
-
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="well well-md">
-                        <form name="contactusForm">
-                            <div class="row">
-                                <div class="col-md-6">
-
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-user"></span>
-                                            </span>
-                                            <input type="text" ng-model="contactus.fullName" class="form-control" id="name" placeholder="*Name (required)" required="required">
-                                        </div>
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-envelope"></span>
-                                            </span>
-
-                                            <input ng-model="contactus.emailId" type="email" class="form-control" id="email" placeholder="*Email address (required)" required="required">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div id="recaptcha-container"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea name="message" ng-model="contactus.feedback" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message" ng-trim="false" maxlength="1500"></textarea>
-                                        <p style="color: grey;"class="centerAligned">{{1500 - contactus.feedback.length}} Remaining Characters</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <button ng-disabled="contactusForm.$invalid" ng-click="contactUsFormSubmit(contactusForm)" type="submit" class="btn btn-primary pull-right">
-                                      Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="contactus" class="contactus">
+        <div ng-include src="'./views/ContactUsView.html'"></div>
     </section>
 
     <nav class="navbar navbar-inverse" style="margin:0;border-radius:0;"role="navigation">
-        <div class="container">
-                <div class="col-xs-12 col-md-4">
-                   <div class="navbar-text">© 2015 Education Cop – All Rights Reserved</div>
-
-                </div>
-                <div class="ol-xs-12 col-md-8">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-
-          <!-- a href="http://youtu.be/zJahlKPCL9g" class="navbar-btn btn-danger btn pull-right">
-          <span class="glyphicon glyphicon-star"></span>  Subscribe on YouTube</a> -->
-        </div>
+        <div ng-include src="'./views/FooterView.html'"></div>
     </nav>
 </main>
 
