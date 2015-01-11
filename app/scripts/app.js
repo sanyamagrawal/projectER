@@ -27,6 +27,7 @@ app.config(function($locationProvider) {
 app.run(function($location, $window, $rootScope, $anchorScroll) {
     var bodyElement = angular.element($window.document.body),
         targetElement = bodyElement; //angular.element(document.querySelector('body > .bs-docs-container'));
+    $.material.init();
     targetElement.on("click", function(evt) {
         var el = angular.element(evt.target),
             hash = el.attr("href");
