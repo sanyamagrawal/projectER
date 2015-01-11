@@ -1,12 +1,7 @@
 "use strict";
 
 app.controller("HomepageController", function($scope, $window, HomepageService) {
-    $scope.$on("$viewContentLoaded", function() {
-        //$window.smoothScroll.render();
-        $window.grecaptcha.render("recaptcha-container", {
-            "sitekey": "6Lctsf8SAAAAAIoacZD_Q9UOANthxE7G0c1VCx0C"
-        });
-    });
+
 
     $scope.contactUsFormSubmit = function(form) {
         //var reCaptchaResponse = $window.grecaptcha.getResponse();
@@ -14,6 +9,12 @@ app.controller("HomepageController", function($scope, $window, HomepageService) 
             saveFeedback(true);
             //HomepageService.checkUserValid(reCaptchaResponse).then(saveFeedback.bind(this), userInvalid.bind(this));
         }
+    };
+    $scope.renderReCaptcha = function() {
+        debugger;
+        $window.grecaptcha.render("recaptcha-container", {
+            "sitekey": "6Lctsf8SAAAAAIoacZD_Q9UOANthxE7G0c1VCx0C"
+        });
     };
 
     function saveFeedback(response) {
