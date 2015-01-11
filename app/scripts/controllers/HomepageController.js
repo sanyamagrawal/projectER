@@ -2,6 +2,7 @@
 
 app.controller("HomepageController", function($scope, $window, HomepageService) {
 
+    $scope.dummyImageURL = "http://api.adorable.io/avatars/205/abott@adorable.io.png";
 
     $scope.contactUsFormSubmit = function(form) {
         //var reCaptchaResponse = $window.grecaptcha.getResponse();
@@ -11,7 +12,6 @@ app.controller("HomepageController", function($scope, $window, HomepageService) 
         }
     };
     $scope.renderReCaptcha = function() {
-        debugger;
         $window.grecaptcha.render("recaptcha-container", {
             "sitekey": "6Lctsf8SAAAAAIoacZD_Q9UOANthxE7G0c1VCx0C"
         });
