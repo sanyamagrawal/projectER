@@ -2,6 +2,7 @@
 
 app.controller("HomepageController", function($scope, $window, HomepageService) {
     $scope.$on("$viewContentLoaded", function() {
+        //$window.smoothScroll.render();
         $window.grecaptcha.render("recaptcha-container", {
             "sitekey": "6Lctsf8SAAAAAIoacZD_Q9UOANthxE7G0c1VCx0C"
         });

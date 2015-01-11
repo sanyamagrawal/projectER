@@ -15,37 +15,24 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#homepage">Home</a></li>
                     <li><a href="#multimedia">Multimedia</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#ourmission">Our Mission</a></li>
                     <li><a href="#aboutus">About Us</a></li>
                     <li><a href="#contactus">Contact Us</a></li>
-                    <li><button style="margin:10px 15px"data-navigate-link ="/login" class="btn btn-primary navbar-btn btn-sm"><strong>Log In</strong></button></li>
-              </ul>
+                    <li><button style="margin:10px 15px" class="btn btn-primary navbar-btn btn-sm" data-template="./views/LoginView.html" data-placement="right" data-animation="am-slide-right" bs-aside="aside" data-container="body"><strong>Log In</strong></button></li>
+                </ul>
             </div><!--/.nav-collapse -->
 
         </div>
     </nav>
 
     <article class="fixed" style="top:35%">
-        <div class="socialIcons">
-             <a class="block" target="_blank" href="https://www.facebook.com/educationcop">
-                <i id="social" class="fa fa-facebook-square fa-3x social-fb" ></i>
-            </a>
-            <a class="block" target="_blank" href="https://twitter.com/educationcop">
-                <i id="social" class="fa fa-twitter-square fa-3x social-tw"></i>
-            </a>
-            <a class="block" target="_blank" href="https://plus.google.com/+educationcop">
-                <i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i>
-            </a>
-            <a class="block" target="_blank" href="mailto:support@educationcop.com">
-                <i id="social" class="fa fa-envelope-square fa-3x social-em"></i>
-            </a>
-        </div>
+        <div ng-include src="'./views/SocialMedia.html'"></div>
     </article>
 
-    <section id="home" class="table stretch about centerAligned">
+    <section id="homepage" class="table stretch about centerAligned">
         <div class=" tableCell container middleAlign">
                 <h1>Begin your search here. </h1>
                 <div class="relative main-search-container">
@@ -54,7 +41,7 @@
                         <i class="fa fa-lg fa-lock"></i>
                     </button>
                 </div>
-                <h1>Or <button style="margin-top: -10px;" data-navigate-link ="/signup" class="btn btn-primary btn-xs"><span style="font-size: 25px;font-weight: 400;">Sign Up</span></button> for a personalized experience.</h1>
+                <h1>Or <button style="margin-top: -10px;" data-navigate-link ="/signup" class="btn btn-primary btn-lg"><span style="font-size: 18px;font-weight: 400;">Sign Up</span></button> for a personalized experience.</h1>
                 <a href="#about" class="btn btn-circle page-scroll">
                     <i class="fa fa-angle-double-down animated"></i>
                 </a>
@@ -145,7 +132,7 @@
                     </div>
                     <div class="form-group">
                         <a class="twitter-timeline" href="https://twitter.com/sanyamagrawal" data-widget-id="548791592719376385">Tweets by @sanyamagrawal</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div>
                 </div>
                 <div class="col-md-7">
